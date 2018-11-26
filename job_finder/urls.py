@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import jobfinder
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sign_in/', jobfinder.views.hello),
 ]
