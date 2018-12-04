@@ -1,0 +1,9 @@
+{% if applicants %}
+<ul>
+    {% for app in applicants %}
+    <li><a href="/applicants/{{ app.user_name }}/">{{ app.user_name }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+    <h3>no applicants</h3>
+{% endif %}
